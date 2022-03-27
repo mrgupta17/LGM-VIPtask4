@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    font:bold 14px Aria,sans-serif;
+}
+
+html {
+    height: 100%;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgb(255, 255, 255) 20%, rgb(204, 204, 204));
+    background-size: cover;
+}
+
+#calculator {
+    width: 325px;
+    height: auto;
+    margin: 100px auto;
+    padding: 20px 20px 9PX;
+    background: #0b8fcc;
+    background: linear-gradient(#0757ce, #8bceec);
+    border-radius: 3px;
+    box-shadow: 0px 4px #009de4, 0px 10px 15px rgba(0,0,0,0.2);
+}
+
+#screen {
+    float: right;
+    height: 120px;
+    width: 420px;
+    padding: 0 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+    font-size: 17px;
+    line-height: 40px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+
+.keys, .top {
+    overflow: hidden;
+}
+
+
+.keys span, #clear {
+    float: left;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+    width: 66px;
+    height: 36px;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    margin: 0 7px 11px 0;
+    color: #888;
+    line-height: 36px;
+    text-align: center;
+    user-select: none;
+    transition: all 0.2s ease;
+}
+
+.keys span.operator {
+    background: #FFF0F5;
+    margin-right: 0; 
+}
+
+
+.keys span.eval {
+    background: #66ee7d;
+    box-shadow: 0px 4px #55c982;
+    color: #144420;
+}
+
+.keys span.eval:hover {
+    background: #54b850;
+    box-shadow: 0px 4px #025a0e;
+    color: #ffffff;
+}
+
+.keys span.eval:active {
+    box-shadow: 0px 0px #717a33;
+    top: 4px;
+}
+
+
+#clear {
+    background: #f35969;
+    box-shadow: 0px 4px #ff7c87;
+    color: white;
+}
+
+#clear:hover {
+    background: #e22532;
+    box-shadow: 0px 4px #f33441;
+    color: white;
+}
+
+#clear:active {
+    top: 4px;
+    box-shadow: 0px 0px #e73e4a;
+}
+
+
+.keys span:hover {
+    background: #9c89f6;
+    box-shadow: 0px 4px #6b54d3;
+    color: white;
+}
+
+.keys span:active {
+    box-shadow: 0px 0px #6b54d3;
+    top: 4px;
+}
